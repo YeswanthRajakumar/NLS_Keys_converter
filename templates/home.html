@@ -5,7 +5,7 @@
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}">
 {% endblock %}
 {% block content %}
-    <span style="color: red;font-size: large;margin-left: -20px">{{ error if error!= None }} !!!</span>
+    <span style="color: red;font-size: large;margin-left: -20px">{{ error if error!= None }}</span>
 <div class="login_form">
     <div class="details">
         <form action="" method="post" enctype = "multipart/form-data">
