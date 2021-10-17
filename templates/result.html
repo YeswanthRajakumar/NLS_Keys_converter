@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block head %}
+
+    <title>Result</title>
+
+{% endblock %}
+{% block content %}
+    <div class="jumbotron" style="margin-top: 5%;">
+    <div class="no-copy-text" style="user-select: none">
+    <h3> Directions to use:</h3>
+    <ol>
+        <li>Select all (Command + A) or (CTRL + A)</li>
+        <li>Create a New Version in Flow creator</li>
+        <li>Paste the copied NLS keys in Nls_labels tab</li>
+        <li>Click on save</li>
+        <li>Click on Validate</li>
+        <li>If there are no issues then click on Deploy</li>
+        <li>If there are issue please connect with some solutions Engineer or ME</li>
+    </ol>
+    </div>
+    <pre>
+       {{ result }}
+    </pre>
+    </div>
+
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

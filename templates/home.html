@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title> Home </title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}">
+{% endblock %}
+{% block content %}
+    <span style="color: red;font-size: large;margin-left: -20px">{{ error if error!= None }} !!!</span>
+<div class="login_form">
+    <div class="details">
+        <form action="" method="post" enctype = "multipart/form-data">
+            <div class="wrap" style="margin-left: -10px">
+                <label style="font-size: 20px;margin-left: -5px">Upload your CSV file with NLS key</label>
+                <input type="file" class="input" name="file" required>
+            </div>
+
+            <button type="submit" class="button"><h1 class="sign"> Convert to YAML</h1> </button>
+        </form>
+    </div>
+    <img class="fox" style="margin-left: 90px;height: 200px" src="https://freesvg.org/img/nicubunu_Comic_characters_Darth.png">
+    <div class="details-two">
+        <h1 class="back" style="font-size: 35px;margin-left: 8px">Welcome</h1>
+    </div>
+
+</div>
+    <p> &nbsp; &nbsp; &nbsp; Built with ❤️ &nbsp; by  Yeswanth Rajakumar @2021 </p>
+
+{% endblock %}
+
